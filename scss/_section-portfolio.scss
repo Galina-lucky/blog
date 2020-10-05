@@ -1,0 +1,41 @@
+.section-portfolio {
+  margin-bottom: 85px;
+}
+
+.list-portfolio {
+  margin-bottom: 104px;
+}
+
+.portfolio-preview {
+  display: block;
+  position: relative;
+
+  &__img {
+    border-radius: 10px;
+  }
+
+  &__info {
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    padding-right: 18px;
+    padding-left: 18px;
+
+   &--color-white {
+      color: $font-color-secondary;
+    }
+  }
+
+  &__heading {
+    font-family: $font-family-secondary;
+    font-size: $h3-font-size;
+    margin-bottom: 44px;
+  }
+
+  &__title {
+    font-family: $font-family-secondary;
+    font-size: $h4-font-size;
+    margin-bottom: 17px;
+    line-height: 1.555555;
+  }
+}

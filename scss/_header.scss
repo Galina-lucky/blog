@@ -1,0 +1,47 @@
+.header { 
+  background-color:  $bg-color-primary;
+  background: url('../img/fon-header_1.jpg');
+  background-size: cover;
+  height: 100vh;
+  padding-top: 4px;
+  margin-bottom: 83px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  padding: 3px 6px;
+  outline: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  &__item {
+    margin-right: 73px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 6px 10px;
+    color: $font-color-primary;
+    font-size: $secondary-font-size;
+    outline: none;
+
+    &:hover {
+      font-weight: 700;
+    }  
+  }
+}

@@ -1,0 +1,38 @@
+.section-about {
+  margin-bottom: 85px;
+}
+
+.photo {
+
+  &__img {
+    border-radius: 10px;
+  }
+}
+
+.info {
+/*  display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  padding-top: 42px;
+  
+  &__text {
+    padding-left: 20px;
+    padding-right: 73px;
+    margin-bottom: 71px;
+
+    & p:not(:last-child) {
+      margin-bottom: 25px;
+    } 
+  }
+}
+
+.slogan {
+  padding: 27px 20px;
+  border-left: 3px solid $bg-color-secondary;
+
+  &__text {
+    font-style: italic;
+    font-size: $big-font-size;
+    line-height: 1.333333;
+  }
+}
