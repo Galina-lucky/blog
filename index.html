@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Start</title>
+  <title>Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link rel="icon" href=""/>
+  <link rel="icon" href="img/blog.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header header--bg-home">
     <div class="container">
       <nav class="nav">
           <div class="logo">
@@ -230,13 +230,45 @@
         <button class="btn btn--primary">Показать ещё</button>
       </section>
       <section class="section-feedback" id="feedback">
-        
-      </section>>
+        <h1 class="title title--center">Написать мне</h1>
+        <div class="row">
+          <div class="col-10 col-offset-1">
+            <form class="form-contact">
+              <div class="form-contact__field">
+                <label class="form-contact__caption" for="fullname">Ваше имя</label>
+                <input id="fullname" class="form-contact__input" name="fullname" type="text" minlength="10" value="" required>
+              </div>
+              <div class="form-contact__field">
+                <label class="form-contact__caption" for="email">Email</label>
+                <input id="email" class="form-contact__input" name="email" type="text" minlength="10" value="" required>
+              </div>
+              <div class="form-contact__field form-contact__field--big">
+                <label class="form-contact__caption" for="message">Сообщение</label>
+                <textarea id="message" class="form-contact__input form-contact__input--message" name="message" maxlength="200" value="" placeholder="Напишите здесь ваше сообщение."></textarea>
+              </div>
+              <button class="btn btn--primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="footer">
     <div class="container">
-      
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://vk.com/">ВК</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://web.telegram.org/">Телеграмм</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="www.instagram.com">Инстаграмм</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/">Твитер</a>
+        </li>   
+      </ul>
     </div>
   </footer>
 </body>

@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 65px;
+  padding-bottom: 90px;
+  background-color:  $bg-color-secondary;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 630px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__item {
+    outline: none;
+  }
+
+  &__link {
+    display: box;
+    padding: 8px 12px;
+    color: $font-color-primary;
+    font-size: $h4-font-size;
+    outline: none;
+
+    &:hover{
+    color: $font-color-secondary;
+    text-shadow: 0 0 3px $font-color-primary;
+    }
+
+    &:focus{
+      color: $font-color-secondary;
+    }
+
+    &:active{
+      color: $font-color-primary;
+      text-shadow: 0 0 2px $font-color-primary;
+    }
+  }
+}

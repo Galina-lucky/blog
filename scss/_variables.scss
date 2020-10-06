@@ -1,4 +1,5 @@
 $COLOR_WHITE: #fff;
+$COLOR_BLACK: #000;
 
 $dark-grey: #2E2F22;
 $grey: #D7D1C9;
@@ -17,9 +18,10 @@ $h3-font-size: 20px;
 $h4-font-size: 18px;
 $big-font-size: 30px;
 
-$bg-color-primary: $milky;
+$bg-color-primary: $COLOR_WHITE;
 $bg-color-secondary: $grey;
 $color-btn: #202117;
+$input-color: $COLOR_BLACK;
 
 $font-color-primary: $dark-grey;
 $font-color-secondary: $COLOR_WHITE;

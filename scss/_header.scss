@@ -1,10 +1,17 @@
 .header { 
   background-color:  $bg-color-primary;
-  background: url('../img/fon-header_1.jpg');
   background-size: cover;
   height: 100vh;
   padding-top: 4px;
   margin-bottom: 83px;
+
+  &--bg-home {
+    background: url('../img/fon-header_1.jpg');
+  }
+
+  &--bg-article {
+    background: url('../img/fon-header_1.jpg');
+  }
 }
 
 .nav {
