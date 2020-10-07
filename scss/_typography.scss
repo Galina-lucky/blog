@@ -40,6 +40,22 @@ h4
   }
 }
 
+.tegs {
+  color: rgba($font-color-primary, 0.7);
 
+  &--light {
+    color: rgba(#fff, 0.7);
+  }
+}
 
+.date {
+  color: rgba($font-color-primary, 0.7);
 
+  &--light {
+    color: rgba(#fff, 0.7);
+  }
+}
+
+.figcaption {
+  font-size: 14px;
+}

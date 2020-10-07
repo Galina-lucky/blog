@@ -14,7 +14,7 @@
   padding-right: 71px;
   padding-bottom: 62px;
 
-  &__field {
+  &__group {
     width: 50%;
     padding-right: 10px;
     padding-left: 10px;
@@ -24,8 +24,8 @@
       width: 100%;
     }
 
-    &:hover .form-contact__input{
-      box-shadow: 0 0 10px 2px $input-color;
+    &:hover .form-contact__field{
+      box-shadow: 0 0 10px 2px $input-color-primary;
     }
   }
 
@@ -37,19 +37,19 @@
     margin-bottom: 12px;
   }
 
-  &__input {
+  &__field {
     width: 100%;
     padding: 20px;
     opacity: 0.4;
-    border: 1px solid $input-color;
+    border: 1px solid $input-color-primary;
     outline: none;
 
     &:focus {
-      outline: 1px solid $input-color;
+      outline: 1px solid $input-color-primary;
     }
 
     &:active {
-      outline: 4px solid $input-color;
+      outline: 4px solid $input-color-primary;
     }
 
     &--message {

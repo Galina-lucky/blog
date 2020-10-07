@@ -3,7 +3,7 @@ $COLOR_BLACK: #000;
 
 $dark-grey: #2E2F22;
 $grey: #D7D1C9;
-$milky: #E5E5E5;
+$light-grey: #ECE1E1;
 
 
 $font-family-base: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
@@ -16,14 +16,15 @@ $h1-font-size: 36px;
 $h2-font-size: 24px;
 $h3-font-size: 20px;
 $h4-font-size: 18px;
-$big-font-size: 30px;
+$big-font-size: 36px;
+$small-font-size: 14px;
 
 $bg-color-primary: $COLOR_WHITE;
 $bg-color-secondary: $grey;
+$bg-color-comment: $light-grey;
 $color-btn: #202117;
-$input-color: $COLOR_BLACK;
+$input-color-primary: $COLOR_BLACK;
+$input-color-secondary: $dark-grey;
 
 $font-color-primary: $dark-grey;
 $font-color-secondary: $COLOR_WHITE;
-
-$width-container: 1220px;
