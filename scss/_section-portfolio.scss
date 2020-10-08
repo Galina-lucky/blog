@@ -9,16 +9,17 @@
 .portfolio-preview {
   display: block;
   position: relative;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 
   &__img {
     border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
   }
 
   &__info {
-    text-align: center;
     position: absolute;
     top: 140px;
+    color: $font-color-primary;
+    text-align: center;
     padding-right: 18px;
     padding-left: 18px;
 

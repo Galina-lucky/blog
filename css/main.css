@@ -145,9 +145,6 @@ a {
   margin-right: -10px;
 }
 
-/*.row + .row {
-  margin-top: 30px;
-}*/
 [class*="col-"] {
   padding-left: 10px;
   padding-right: 10px;
@@ -310,6 +307,7 @@ a {
   border-radius: 10px;
 }
 .custom-select__list {
+  position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -318,6 +316,23 @@ a {
   border-radius: 10px;
   padding: 0.75em 1.25em;
   outline: none;
+}
+.custom-select__list:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+  border-top-width: 15px;
+  border-left-color: transparent;
+  border-left-width: 9px;
+  border-right-color: transparent;
+  border-right-width: 9px;
+  cursor: pointer;
 }
 
 .list-article {
@@ -369,9 +384,17 @@ a {
 }
 
 .info {
-  /*  display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
   padding-top: 42px;
 }
 .info__text {
@@ -389,7 +412,7 @@ a {
 }
 .slogan__text {
   font-style: italic;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.333333;
 }
 
@@ -404,16 +427,17 @@ a {
 .portfolio-preview {
   display: block;
   position: relative;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .portfolio-preview__img {
   border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
 }
 .portfolio-preview__info {
-  text-align: center;
   position: absolute;
   top: 140px;
+  color: #2E2F22;
+  text-align: center;
   padding-right: 18px;
   padding-left: 18px;
 }
@@ -678,6 +702,7 @@ a {
   display: inline-block;
   border-radius: 10px;
   margin-right: 14px;
+  vertical-align: middle;
 }
 .comments-list__name {
   font-size: 16px;
@@ -721,6 +746,16 @@ a {
   padding-bottom: 15px;
   margin-bottom: 35px;
 }
+.form-comment__field:hover {
+  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 0 0 3px #2E2F22;
+          box-shadow: 0 0 3px #2E2F22;
+}
+.form-comment__field:focus {
+  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 0 0 3px #2E2F22;
+          box-shadow: 0 0 3px #2E2F22;
+}
 .form-comment__field--message {
   margin-bottom: 0;
   width: 56.783216%;
@@ -729,8 +764,7 @@ a {
   border-radius: 10px;
   padding: 18px 20px;
   resize: none;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  /*     align-content: stretch;*/
 }
 .form-comment__btn {
   margin-top: 14px;

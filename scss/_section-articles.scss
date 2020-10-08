@@ -14,12 +14,31 @@
   border-radius: 10px;
 
   &__list {
+    position: relative;    
     appearance: none;
     width: 100%;
     background: $bg-color-secondary;
     border-radius: 10px;
     padding: 0.75em 1.25em;
     outline: none;
+
+    &:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 20px;    
+    width: 0;
+    height: 0;
+    border: 15px solid;
+    border-bottom-width: 0;
+    border-top-color: $bg-color-primary;
+    border-top-width: 15px;
+    border-left-color: transparent;
+    border-left-width: 9px;
+    border-right-color: transparent;
+    border-right-width: 9px;
+    cursor: pointer;
+    }
   }
 }
 

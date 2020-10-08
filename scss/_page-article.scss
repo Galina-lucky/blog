@@ -90,7 +90,7 @@
   &__link {
     display: inline-block;
     vertical-align: middle;
-    font-size: $big-font-size;
+    font-size: $l-font-size;
     color: $font-color-primary;
     font-weight: 700;
     border: 1px solid transparent;
@@ -151,6 +151,7 @@
     display: inline-block;
     border-radius: 10px;
     margin-right: 14px;
+    vertical-align: middle;
   }
 
   &__name {
@@ -192,6 +193,16 @@
     padding-bottom: 15px;
     margin-bottom: 35px;
 
+    &:hover {
+      border-bottom: 1px solid $input-color-primary;
+      box-shadow: 0 0 3px $input-color-secondary;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $input-color-primary;
+      box-shadow: 0 0 3px $input-color-secondary;
+    }
+
     &--message {
       margin-bottom: 0;
       width: 56.783216%;
@@ -200,7 +211,7 @@
       border-radius: 10px;
       padding: 18px 20px;
       resize: none;
-      align-content: stretch;
+ /*     align-content: stretch;*/
     }
   }
 
