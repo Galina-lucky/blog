@@ -42,16 +42,12 @@ a {
   outline: none;
   box-shadow: none;
 
-  &--primary {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &:hover {
-    background-color: lighten($font-color-primary, 60);
-    border-color: lighten($font-color-primary, 60);
-    color: $font-color-secondary;
+  &:not([disabled]) {
+    &:hover {
+      background-color: lighten($font-color-primary, 60);
+      border-color: lighten($font-color-primary, 60);
+      color: $font-color-secondary;
+    }
   }
 
   &:focus {
@@ -63,5 +59,11 @@ a {
     background-color: lighten($font-color-primary, 40);
     border-color: lighten($font-color-primary, 40);
     color: $font-color-secondary;
+  }
+
+  &--primary {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

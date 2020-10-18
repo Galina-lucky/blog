@@ -1,34 +1,28 @@
 .section-articles {
-  margin-bottom: 85px;
-}
+  padding-bottom: 85px;
 
-.articles__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .custom-select {
   display: block;
+  position: relative; 
   width: 203px;
   border-radius: 10px;
+  margin-bottom: 50px;
 
-  &__list {
-    position: relative;    
-    appearance: none;
-    width: 100%;
-    background: $bg-color-secondary;
-    border-radius: 10px;
-    padding: 0.75em 1.25em;
-    outline: none;
-
-    &:after {
+  &:after {
     content: "";
+    display: block;
     position: absolute;
     right: 20px;
     top: 20px;    
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border: 15px solid;
     border-bottom-width: 0;
     border-top-color: $bg-color-primary;
@@ -38,11 +32,51 @@
     border-right-color: transparent;
     border-right-width: 9px;
     cursor: pointer;
+    pointer-events: none;
+  }
+
+  &__list {
+    display: block;
+    position: relative; 
+    width: 100%;   
+    appearance: none;
+    border-radius: 10px;
+    padding: 0.75em 1.25em;
+    background: $bg-color-secondary;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      box-shadow: 0 0 5px black;
     }
+
+    &:focus {
+      box-shadow: 0 0 5px black;
+    }
+
+/*    &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;    
+    width: 40px;
+    height: 40px;
+     background-color: red;
+    border: 15px solid;
+    border-bottom-width: 0;
+    border-top-color: $bg-color-primary;
+    border-top-width: 15px;
+    border-left-color: transparent;
+    border-left-width: 9px;
+    border-right-color: transparent;
+    border-right-width: 9px;
+    cursor: pointer;
+    }*/
   }
 }
 
-.list-article {
+.articles-list {
   margin-bottom: 62px;
 
   &:last-child {
@@ -53,6 +87,17 @@
 .article-preview {
   display: block;
   position: relative;
+  color: $font-color-primary;
+  border-radius: 10px;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 5px black;
+  }
+
+  &:focus {
+    box-shadow: 0 0 5px black;
+  }
 
   &__img {
     border-radius: 10px;
@@ -60,14 +105,15 @@
   }
 
   &__info {
-    text-align: left;
-
+   
     &--imposition {
       position: absolute;
       bottom: 60px;
-      left: 82px;
+      left: 0;
+      padding-right: 80px;
+      padding-left: 80px;
       margin-right: 80px;
-      color: $font-color-secondary;
+      color: $font-color-secondary;    
 
       & .article-preview__description {
         font-size: $secondary-font-size;
@@ -85,7 +131,14 @@
     margin-bottom: 12px;
   }
 
-  & span {
-    display: block;
+  &__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgba($font-color-primary, 0.7);
+
+    &--light {
+      color: rgba(#fff, 0.7);
+    }
   }
 }

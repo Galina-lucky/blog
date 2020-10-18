@@ -1,5 +1,5 @@
 .section-feedback {
-  margin-bottom: 81px;
+  padding-bottom: 81px;
 }
 
 .form-contact {
@@ -14,14 +14,15 @@
   padding-right: 71px;
   padding-bottom: 62px;
 
+
   &__group {
-    width: 50%;
+    width: 100%;
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
 
-    &--big {
-      width: 100%;
+    &--half-width {
+      width: 50%;
     }
 
     &:hover .form-contact__field{
@@ -43,6 +44,7 @@
     opacity: 0.4;
     border: 1px solid $input-color-primary;
     outline: none;
+    color: $font-color-input;
 
     &:focus {
       outline: 1px solid $input-color-primary;

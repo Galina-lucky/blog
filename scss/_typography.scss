@@ -31,29 +31,16 @@ h4
 
 .title {
   font-family: $font-family-secondary;
-  font-size: $h1-font-size;
   font-weight: 700;
-  margin-bottom: 50px;
 
   &--center {
     text-align: center;
   }
 }
 
-.tegs {
-  color: rgba($font-color-primary, 0.7);
-
-  &--light {
-    color: rgba(#fff, 0.7);
-  }
-}
-
-.date {
-  color: rgba($font-color-primary, 0.7);
-
-  &--light {
-    color: rgba(#fff, 0.7);
-  }
+.section-title {
+  font-size: $h1-font-size;
+  margin-bottom: 50px;
 }
 
 .figcaption {

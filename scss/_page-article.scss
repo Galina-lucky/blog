@@ -30,8 +30,9 @@
   }
 }
 
-.tegs-date {
+.tags-date {
   margin-bottom: 50px;
+  color: rgba($font-color-primary, 0.7);
 
   & span {
     display: inline-block;
@@ -125,7 +126,7 @@
   }
 }
 
-.section-comment {
+.section-comments {
   margin-bottom: 81px;
 }
 
@@ -160,7 +161,7 @@
     vertical-align: middle;
   }
 
-  &__content {
+  &__field {
     font-size: $base-font-size;
   }
 }
@@ -211,7 +212,6 @@
       border-radius: 10px;
       padding: 18px 20px;
       resize: none;
- /*     align-content: stretch;*/
     }
   }
 

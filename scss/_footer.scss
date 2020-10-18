@@ -26,7 +26,6 @@
 
     &:hover{
     color: $font-color-secondary;
-    text-shadow: 0 0 3px $font-color-primary;
     }
 
     &:focus{
@@ -35,7 +34,6 @@
 
     &:active{
       color: $font-color-primary;
-      text-shadow: 0 0 2px $font-color-primary;
     }
   }
 }

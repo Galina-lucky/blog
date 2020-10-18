@@ -15,128 +15,127 @@
 <body>
   <header class="header header--bg-home">
     <div class="container">
-      <nav class="nav">
-          <div class="logo">
-            <a class="link-logo" href="#">
-              <img src="img/logo.png" alt="logo">
-            </a>
-          </div>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="#articles">Статьи</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#about">Обо мне</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#portfolio">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#feedback">Написать мне</a>
-            </li>
-          </ul>
+      <nav class="main-nav">  
+        <a class="link-logo" href="#">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#articles">Статьи</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#portfolio">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#feedback">Написать мне</a>
+          </li>
+        </ul>
       </nav >
+      <h1 class="sr-only"></h1>
     </div>
   </header>
   <main >
     <div class="container">
       <section class="section-articles" id="articles">
-        <div class="articles__title">
-          <h1 class="title">Все статьи</h1>
+        <div class="section-articles__header">
+          <h2 class="title section-title">Все статьи</h2>
           <div class="custom-select">
             <select class="custom-select__list">
               <option class="custom-select__item" hidden>Выбрать тему</option>
-              <option class="custom-select__item">Все статьи</option>
-              <option class="custom-select__item">Путешествия</option>
-              <option class="custom-select__item">Город</option>
-              <option class="custom-select__item">Книги</option>
-              <option class="custom-select__item">Фотографии</option>
-              <option class="custom-select__item">Рецепты</option>
+              <option class="custom-select__item" value="all">Все статьи</option>
+              <option class="custom-select__item" value="travels">Путешествия</option>
+              <option class="custom-select__item" value="city">Город</option>
+              <option class="custom-select__item" value="books">Книги</option>
+              <option class="custom-select__item" value="photos">Фотографии</option>
+              <option class="custom-select__item" value="recipes">Рецепты</option>
             </select>
           </div>
         </div>
-        <div class="list-article">
+        <div class="articles-list">
           <div class="row">
             <div class="col-4">
-              <a class="article-preview" href="index2.html">
-                <img class="article-preview__img img-responsive" src="img/article_1.jpg">
+              <a class="article-preview" href="article.html" data-category="travels">
+                <img class="article-preview__img img-responsive" src="img/article_1.jpg" alt="">
                 <div class="article-preview__info">
-                  <h4 class="title article-preview__title">Путешествие в Берлин в августе
-                  </h4>
+                  <h5 class="title article-preview__title">Путешествие в Берлин в августе
+                  </h5>
                   <p class="article-preview__description">
                   Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
                   </p>
-                  <div class="wrapper">
-                    <span class="tegs">Теги: путешествия</span>
+                  <div class="article-preview__inner">
+                    <p class="tags">Теги: путешествия</p>
                     <time class="date" datetime="2020-09-29">29.09.2020</time>
                   </div>
                 </div>
               </a>
             </div>
             <div class="col-4">
-              <a class="article-preview" href="index2.html">
-                <img class="article-preview__img img-responsive" src="img/article_2.jpg">
+              <a class="article-preview" href="article.html" data-category="city">
+                <img class="article-preview__img img-responsive" src="img/article_2.jpg" alt="">
                 <div class="article-preview__info">
-                  <h4 class="title article-preview__title">Где выпить колдбрю в Москве
-                  </h4>
+                  <h5 class="title article-preview__title">Где выпить колдбрю в Москве
+                  </h5>
                   <p class="article-preview__description">
                     Собрала для вас список любимых кофеен, где подают лучший летний напиток.
                   </p>
-                  <div class="wrapper">
-                    <span class="tegs">Теги: город</span>
+                  <div class="article-preview__inner">
+                    <p class="tags">Теги: город</p>
                     <time class="date" datetime="2020-07-24">24.07.2020</time>
                   </div>
                 </div>
               </a>
             </div>
             <div class="col-4">
-              <a class="article-preview" href="index2.html">
+              <a class="article-preview" href="article.html" data-category="books">
                 <img class="article-preview__img img-responsive" src="img/article_3.jpg">
-                <div class="article-preview__info">
-                  <h4 class="title article-preview__title">Прочитано: книжные рекомендации
-                  </h4>
+                <div class="article-preview__info" alt="">
+                  <h5 class="title article-preview__title">Прочитано: книжные рекомендации
+                  </h5>
                   <p class="article-preview__description">
                     Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
                   </p>
-                  <div class="wrapper">
-                    <span class="tegs">Теги: книги</span>
-                    <time class="date" datetime="2020-09-2020">29.09.2020</time>
+                  <div class="article-preview__inner">
+                    <p class="tags">Теги: книги</p>
+                    <time class="date" datetime="2020-09-29">29.09.2020</time>
                   </div>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div class="list-article">
+        <div class="articles-list">
           <div class="row">
             <div class="col-6">
-              <a class="article-preview" href="index2.html">
-                <img class="article-preview__img img-responsive" src="img/article_4.jpg">
+              <a class="article-preview" href="article.html" data-category="photos">
+                <img class="article-preview__img img-responsive" src="img/article_4.jpg" alt="">
                 <div class="article-preview__info article-preview__info--imposition">
-                  <h4 class="title article-preview__title">Снимки на плёнку
-                  </h4>
+                  <h5 class="title article-preview__title">Снимки на плёнку
+                  </h5>
                   <p class="article-preview__description">
                     Поделилась с вами весенними фотографиями, и секретами удачных снимков.
                   </p>
-                  <div class="wrapper">
-                    <span class="tegs tegs--light">Теги: фотографии</span>
-                    <time class="date date--light" datetime="2020-06-29">29.06.2020</time>
+                  <div class="article-preview__inner article-preview__inner--light">
+                    <p class="tags">Теги: фотографии</p>
+                    <time class="date" datetime="2020-06-29">29.06.2020</time>
                   </div>
                 </div>
               </a>
             </div>
             <div class="col-6">
-              <a class="article-preview" href="index2.html">
-                <img class="article-preview__img img-responsive" src="img/article_5.jpg">
+              <a class="article-preview" href="article.html" data-category="recipes">
+                <img class="article-preview__img img-responsive" src="img/article_5.jpg" alt="">
                 <div class="article-preview__info article-preview__info--imposition">
-                  <h4 class="title article-preview__title">Домашний чизкейк 
-                  </h4>
+                  <h5 class="title article-preview__title">Домашний чизкейк 
+                  </h5>
                   <p class="article-preview__description">
                     Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!
                   </p>
-                  <div class="wrapper">
-                    <span class="tegs tegs--light">Теги: рецепты</span>
-                    <time class="date date--light" datetime="2020-06-24">24.06.2020</time>
+                  <div class="article-preview__inner article-preview__inner--light">
+                    <p class="tags">Теги: рецепты</p>
+                    <time class="date" datetime="2020-06-24">24.06.2020</time>
                   </div>
                 </div>
               </a>
@@ -146,16 +145,14 @@
         <button class="btn btn--primary">Показать ещё</button>
       </section>
       <section class="section-about" id="about">
-        <h1 class="title title--center">Обо мне</h1>
+        <h2 class="section-title title title--center">Обо мне</h2>
         <div class="row">
           <div class="col-6">
-            <div class="photo">
-              <img class="photo__img img-responsive" src="img/about_me.jpg" alt="My photo">
-            </div>
+            <img class="section-about__photo img-responsive" src="img/about_me.jpg" alt="My photo">
           </div>
           <div class="col-6">
-            <div class="info">
-              <div class="info__text">
+            <div class="section-about__info">
+              <div class="section-about__text">
                 <p>Всем привет! Меня зовут Аня, и это мой личный блог. <br> Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.
                 </p>
                 <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!
@@ -165,8 +162,8 @@
                 <p>Приятного чтения!
                 </p>
               </div>
-              <div class="slogan">
-                <p class="slogan__text">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.
+              <div class="callout">
+                <p class="callout__text">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.
                 </p>
               </div>  
             </div>
@@ -174,19 +171,19 @@
         </div>
       </section>
       <section class="section-portfolio" id="portfolio">
-        <h1 class="title title--center">Портфолио</h1>
-        <div class="list-portfolio">
+        <h2 class="section-title title title--center">Портфолио</h2>
+        <div class="portfolio">
           <div class="row">
             <div class="col-4">
               <a class="portfolio-preview" href="#">
                 <img class="portfolio-preview__img img-responsive" src="img/portfolio_1.jpg" alt="">
                 <div class="portfolio-preview__info">
-                  <h3 class="portfolio-preview__heading">
+                  <h4 class="portfolio-preview__header">
                     Блог HTML Academy
-                  </h3>
-                  <h4 class="portfolio-preview__title">
-                    «Как учиться продуктивно»
                   </h4>
+                  <h5 class="portfolio-preview__title">
+                    «Как учиться продуктивно»
+                  </h5>
                   <p class="portfolio-preview__description">
                     Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.
                   </p>
@@ -197,12 +194,12 @@
               <a class="portfolio-preview" href="#">
                 <img class="portfolio-preview__img img-responsive" src="img/portfolio_2.jpg" alt="">
                 <div class="portfolio-preview__info portfolio-preview__info--color-white">
-                  <h3 class="portfolio-preview__heading">
+                  <h4 class="portfolio-preview__header">
                     Журнал «LNK»
-                  </h3>
-                  <h4 class="portfolio-preview__title">
-                    «Зачем поцелуи нужны человеку? И какие они бывают»
                   </h4>
+                  <h5 class="portfolio-preview__title">
+                    «Зачем поцелуи нужны человеку? И какие они бывают»
+                  </h5>
                   <p class="portfolio-preview__description">
                     Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?
                   </p>
@@ -213,12 +210,12 @@
               <a class="portfolio-preview" href="#">
                 <img class="portfolio-preview__img img-responsive" src="img/portfolio_3.jpg" alt="">
                 <div class="portfolio-preview__info">
-                  <h3 class="portfolio-preview__heading">
+                  <h4 class="portfolio-preview__head">
                     Журнал «Т — Л»
-                  </h3>
-                  <h4 class="portfolio-preview__title">
-                    «Советы по эффективной удалённой работе»
                   </h4>
+                  <h5 class="portfolio-preview__title">
+                    «Советы по эффективной удалённой работе»
+                  </h5>
                   <p class="portfolio-preview__description">
                     Поделилась лайфхаками, которые помогают мне работать продуктивно из дома. 
                   </p>
@@ -230,21 +227,21 @@
         <button class="btn btn--primary">Показать ещё</button>
       </section>
       <section class="section-feedback" id="feedback">
-        <h1 class="title title--center">Написать мне</h1>
+        <h2 class="section-title title title--center">Написать мне</h2>
         <div class="row">
           <div class="col-10 col-offset-1">
             <form class="form-contact">
-              <div class="form-contact__group">
+              <div class="form-contact__group form-contact__group--half-width">
                 <label class="form-contact__caption" for="fullname">Ваше имя</label>
                 <input id="fullname" class="form-contact__field" name="fullname" type="text" minlength="10" value="" required>
               </div>
-              <div class="form-contact__group">
+              <div class="form-contact__group form-contact__group--half-width">
                 <label class="form-contact__caption" for="email">Email</label>
                 <input id="email" class="form-contact__field" name="email" type="text" minlength="10" value="" required>
               </div>
-              <div class="form-contact__group form-contact__group--big">
+              <div class="form-contact__group">
                 <label class="form-contact__caption" for="message">Сообщение</label>
-                <textarea id="message" class="form-contact__field form-contact__field--message" name="message" maxlength="200" placeholder="Напишите здесь ваше сообщение."></textarea>
+                <textarea id="message" class="form-contact__field form-contact__field--message" name="message" maxlength="200" minlength="8" placeholder="Напишите здесь ваше сообщение."></textarea>
               </div>
               <button class="btn btn--primary">Отправить</button>
             </form>
@@ -253,6 +250,7 @@
       </section>
     </div>
   </main>
+
   <footer class="footer">
     <div class="container">
       <ul class="social-list">
@@ -271,5 +269,8 @@
       </ul>
     </div>
   </footer>
+
+  <script src="js/check-length-message.js"></script>
+  <script src="js/filter.js"></script>
 </body>
 </html>

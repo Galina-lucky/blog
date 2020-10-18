@@ -1,20 +1,17 @@
 .section-about {
-  margin-bottom: 85px;
-}
+  padding-bottom: 85px;
 
-.photo {
-
-  &__img {
+  &__photo {
     border-radius: 10px;
   }
-}
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding-top: 42px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 42px;
+  }
   
   &__text {
     padding-left: 20px;
@@ -27,7 +24,7 @@
   }
 }
 
-.slogan {
+.callout {
   padding: 27px 20px;
   border-left: 3px solid $bg-color-secondary;
 

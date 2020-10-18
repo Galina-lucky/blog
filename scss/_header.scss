@@ -1,9 +1,9 @@
 .header { 
   height: 100vh;
-  padding-top: 4px;
   margin-bottom: 85px;
 
   &--bg-home {
+    background-color: $bg-color-header;
     background-image: url('../img/fon-header_1.jpg');
     background-size: cover;
   }
@@ -14,17 +14,17 @@
   }
 }
 
-.nav {
+.main-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4px;
 }
 
-.logo {
-  display: block;
-  padding: 3px 6px;
+.link-logo {
   outline: none;
+  display: block;
 }
 
 .menu {
@@ -37,6 +37,14 @@
 
     &:last-child {
       margin-right: 0;
+
+      & .menu__link {
+        padding-right: 0;
+      }
+    }
+
+    &:hover {
+      font-weight: 700;
     }
   }
 
@@ -47,8 +55,8 @@
     font-size: $secondary-font-size;
     outline: none;
 
-    &:hover {
-      font-weight: 700;
-    }  
+    &:focus {
+      outline: 1px solid #cb8742;
+    }
   }
 }

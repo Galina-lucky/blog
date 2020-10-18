@@ -15,26 +15,24 @@
 <body>
   <header class="header header--bg-article">
     <div class="container">
-      <nav class="nav">
-          <div class="logo">
-            <a class="link-logo" href="index.html">
-              <img src="img/logo.png" alt="logo">
-            </a>
-          </div>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="index.html#articles">Статьи</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="index.html#about">Обо мне</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="index.html#portfolio">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="index.html#feedback">Написать мне</a>
-            </li>
-          </ul>
+      <nav class="main-nav">
+          <a class="link-logo" href="index.html">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#articles">Статьи</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#about">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#portfolio">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#feedback">Написать мне</a>
+          </li>
+        </ul>
       </nav >
     </div>
   </header>
@@ -43,9 +41,9 @@
       <article class="article">
         <div class="row">
           <div class="col-10">
-            <h1 class="title article__title">Как себя мотивировать</h1>
-            <p class="tegs-date">
-              <span class="tegs">Теги: путешествия, друзья</span>
+            <h2 class="title section-title article__title">Как себя мотивировать</h2>
+            <p class="tags-date">
+              <span class="tags">Теги: путешествия, друзья</span>
               <time class="date" datetime="2020-09-29">29.09.2020</time>
             </p>
             <div class="article__content">
@@ -68,10 +66,10 @@
             </div>
             <div class="block-share">
               <div class="block-like">
-                <a class="block-like__like" href="#">
+                <a class="block-like__like">
                   <img  src="img/page-article/like.png" alt="like">
                 </a>
-                <span class="block-like__amount">16</span>
+                <p class="block-like__amount">16</p>
               </div>
               <ul class="share-list">
                 <li class="share-list__item">
@@ -101,34 +99,34 @@
           </div>
         </div>
       </article>
-      <section class="section-comment">
+      <section class="section-comments">
         <div class="row">
           <div class="col-8">
             <ul class="comments-list">
                 <li class="comments-list__item">
                   <div class="comments-list__user">
-                    <img class="comments-list__foto" src="img/page-article/us_1.png">
+                    <img class="comments-list__foto" src="img/page-article/us_1.png" alt='user photo'>
                     <span class="comments-list__name">Иван Петров</span>
                   </div>
-                  <p class="comments-list__content">
+                  <p class="comments-list__field">
                     Отличная статья! Спасибо.
                   </p>
                 </li>
                 <li class="comments-list__item">
                   <div class="comments-list__user">
-                    <img class="comments-list__foto" src="img/page-article/us_2.png">
+                    <img class="comments-list__foto" src="img/page-article/us_2.png" alt='user photo'>
                     <span class="comments-list__name">Ксения Ксения</span>
                   </div>
-                  <p class="comments-list__content">
+                  <p class="comments-list__field">
                     Отличный текст, добавила в закладки.
                   </p>
                 </li>
                 <li class="comments-list__item">
                   <div class="comments-list__user">
-                    <img class="comments-list__foto" src="img/page-article/us_3.png">
+                    <img class="comments-list__foto" src="img/page-article/us_3.png" alt='user photo'>
                     <span class="comments-list__name">Иван Иванов</span>
                   </div>
-                  <p class="comments-list__content">
+                  <p class="comments-list__field">
                     Основательный материал! Можешь посоветовать какие-то книги на эту тему?
                   </p>
                 </li>
@@ -138,12 +136,12 @@
         <div class="row">
           <div class="col-8">
             <div class="feedback">
-              <h2 class="feedback__title">Оставить комментарий</h2>
-              <form class="feedback__form form-comment">
-                  <input class="form-comment__field" id="name" name="name" type="text" minlength="10" value="" placeholder="Имя" required>
-                  <input class="form-comment__field" id="email" name="email" type="text" minlength="10" value="" placeholder="Почта">
+              <h3 class="feedback__title">Оставить комментарий</h3>
+              <form class="feedback__form form-comment" method="post">
+                  <input id="name" class="form-comment__field" name="name" type="text" minlength="10" value="" placeholder="Имя" required>
+                  <input id="email" class="form-comment__field" name="email" type="text" minlength="10" value="" placeholder="Почта">
                   <button class="btn btn--primary form-comment__btn">Отправить</button>
-                  <textarea class="form-comment__field form-comment__field--message" id="message"  name="message" maxlength="200" placeholder="Напишите здесь ваше сообщение."></textarea>
+                  <textarea class="form-comment__field form-comment__field--message" id="message"  name="message" maxlength="200" minlength="8" placeholder="Напишите здесь ваше сообщение."></textarea>
               </form>
             </div>
           </div>    
@@ -169,5 +167,11 @@
       </ul>
     </div>
   </footer>
+
+  <script src="js/counter-like.js"></script>
+  <script src="js/posting-comment.js"></script>
+  <script src="js/check-length-message.js"></script>
+
+<!--   <script src="js/main-article.js"></script> -->
 </body>
 </html>
